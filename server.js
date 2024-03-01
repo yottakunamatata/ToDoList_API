@@ -138,4 +138,4 @@ const requestListener = (req,res)=>{
 
 // 有使用者進來就會觸發
 const server = http.createServer(requestListener)
-server.listen(3005)
+server.listen(process.env.PORT || 3005)
